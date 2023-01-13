@@ -6,7 +6,7 @@ $pdo = connectDPO('aanbod');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["datum"])) {
 
-    $x = 11;
+    $x = 3;
 
     while ($x <= 15000) {
         $returnMess = getData($pdo, $x);

@@ -21,6 +21,7 @@ function connectDPO($dbConnect)
         throw new \PDOException($e->getMessage(), (int)$e->getCode());
     }
     return $pdo;
+    
 }
 
 
