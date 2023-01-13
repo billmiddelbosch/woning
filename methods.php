@@ -11,4 +11,5 @@ function getData($pdo, $nr)
 
     //split json;
     return substr($array[$nr], 26);
+    
 }
