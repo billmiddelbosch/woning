@@ -1,0 +1,161 @@
+html {
+    background-color: #94C6C5;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+body {
+    width: 35%;
+}
+
+/* Style buttons */
+form input[type="submit"],
+.form-align input[type="submit"],
+.vote input[type="submit"],
+ul a.button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #112C32;
+    border: 1px solid #ddd;
+    color: white;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+ul a.button {
+    background: #a0a0a0;
+    text-decoration: none;
+}
+
+/* Style the input fields */
+.form-align input,
+.form-align textarea {
+    margin: 0 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+form input[type="submit"]:hover,
+.form-align input[type="submit"]:hover,
+.vote input[type="submit"]:hover,
+ul .button:hover {
+    background-color: #6E6658;
+}
+
+.vote input[type="submit"]:hover:first-child {
+    background-color: green;
+}
+
+.vote input[type="submit"]:hover:last-child {
+    background-color: red;
+}
+
+/* Other STYLING */
+
+.stem {
+    color: #EAC83C;
+    margin-top: 20px;
+}
+
+
+/* HEADER STYLING */
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+
+/* FORM STYLING */
+
+/* Style the form - display items horizontally */
+.form-align {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.div-align {
+    margin: 10px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* Add some margins for each label */
+.form-align label {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px;
+    width: 150px;
+    align-self: flex-start;
+}
+
+
+/* TABLE STYLING */
+
+/* Style the form - display items horizontally */
+tr {
+    width: 75%;
+}
+
+.table-align {
+    padding: 10px 20px;
+    background-color: #274E58;
+    border-radius: 25px;
+    border: 2px solid lightgray;
+    color: white;
+}
+
+td .item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+td .vote {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 900px) {
+
+    body {
+        width: 90%;
+    }
+
+    .table-align input,
+    .form-align input,
+    .form-align textarea {
+        margin: 10px 0;
+
+    }
+
+    .table-align {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    ul a.button {
+        margin: 0;
+    }
+
+    .form-align input {
+        margin: 10px 0;
+    }
+
+    .form-align {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+}
